@@ -1,0 +1,23 @@
+{
+    "name": "mqtt-monitor",
+    "description": "Connects to a broker and monitors all messages",
+    "version": "1.0.0",
+    "dependencies": {
+        "colors":""
+        ,"mqtt":""
+    },
+    "main": "monitor.js",
+    "scripts": {
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/RickyVaughn2/nodejs-mqtt-monitor.git"
+    },
+    "keywords": [],
+    "author": "rickyvaughn2",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/RickyVaughn2/nodejs-mqtt-monitor/issues"
+    },
+    "homepage": "https://github.com/RickyVaughn2/nodejs-mqtt-monitor"
+}
