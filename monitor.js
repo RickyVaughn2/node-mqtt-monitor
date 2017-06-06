@@ -14,7 +14,10 @@ client.on('connect', () => {
 })
 
 client.on('message', (topic, message) => {
-    console.log(colors.green(Date()) + '-' + colors.green('(' + Math.round(+new Date() / 1000) + ')') + ' : ' + colors.white('Topic') + ':' + colors.blue(topic) + ' ' + colors.white('Payload') + ':' + colors.yellow(message))
+    console.log(colors.green(Date()) + '-' 
+    + colors.green('(' + Math.round(+new Date() / 1000) + ')') + ' : ' 
+    + colors.white('Topic') + ':' + colors.blue(topic) + ' ' 
+    + colors.white('Payload') + ':' + colors.yellow(message))
 })
 
 
