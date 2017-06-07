@@ -1,6 +1,17 @@
 const mqtt = require('mqtt')
 const colors = require('colors');
-const client = mqtt.connect('mqtt://localhost')
+const client = mqtt.connect('mqtt://10.8.0.4')
+
+var mqttIP=process.argv[2];
+
+if(mqttIP==null){
+    console.log(colors.red('Please provide a broker IP to connect to.  (node monitor.js <broker ip>'))
+    process.exit(1);
+}
+
+console.log(colors.gray('Connecting to: '+mqttIP))
+client = mqtt.connect('mqtt://'+mqttIP)
+
 
 /**
  */
