@@ -1,6 +1,5 @@
 const mqtt = require('mqtt')
 const colors = require('colors');
-const client = mqtt.connect('mqtt://10.8.0.4')
 
 var mqttIP=process.argv[2];
 
