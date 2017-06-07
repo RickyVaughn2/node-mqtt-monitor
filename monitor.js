@@ -11,15 +11,10 @@ if(mqttIP==null){
 console.log(colors.gray('Connecting to: '+mqttIP))
 client = mqtt.connect('mqtt://'+mqttIP)
 
-
-/**
- */
-var state = 'closed'
-
 client.on('connect', () => {
     client.subscribe('#')
 
-    // Inform controllers that we are connected
+    // Inform that we are connected
     client.publish('monitor/mqtt', 'true')
 })
 
@@ -29,7 +24,6 @@ client.on('message', (topic, message) => {
     + colors.white('Topic') + ':' + colors.blue(topic) + ' ' 
     + colors.white('Payload') + ':' + colors.yellow(message))
 })
-
 
 /**
  * App exit
